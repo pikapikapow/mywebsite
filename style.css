@@ -17,3 +17,31 @@ body {
   background-size: cover;
   background-position: center;
 }
+
+.logo {
+  font-weight: 800;
+  font-size: 50px;
+}
+
+.first_letter {
+  color: blue;
+}
+
+.container {
+  padding: 10px 10%;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo {
+  width: 140px;
+}
+
+nav ul li {
+  display: inline-block;
+}
