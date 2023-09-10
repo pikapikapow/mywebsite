@@ -14,7 +14,7 @@ body {
 
   height: 100vh;
   background-image: url(img/better.JPG);
-  background-size: cover;
+  background-size: 1300px;
   background-position: center;
 }
 
@@ -30,6 +30,7 @@ body {
 .container {
   padding: 10px 10%;
   background-color: black;
+  height: 100px;
 }
 
 nav {
