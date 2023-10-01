@@ -30,8 +30,8 @@ body {
 
 .container {
   padding: 10px 10%;
-  background-color: black;
-  height: 100px;
+  /* background-color: black; */
+  height: auto;
 }
 
 nav {
@@ -96,6 +96,7 @@ nav ul li a:hover::after {
 #about {
   padding: 80px 0;
   color: #ababab;
+  height: auto;
 }
 
 .row {
@@ -160,3 +161,13 @@ nav ul li a:hover::after {
   color: #b54769;
   font-size: 14px;
 }
+
+.tab-contents {
+  display: none;
+}
+
+.tab-contents.active-tab {
+  display: block;
+}
+
+#posts {}

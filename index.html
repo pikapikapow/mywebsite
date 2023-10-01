@@ -21,7 +21,7 @@
           <li><a href="#">About</a></li>
           <li><a href="#">Posts</a></li>
           <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Contact</a></li>
+          <!-- <li><a href="#">Contact</a></li> -->
         </ul>
       </nav>
       <div class="header-text">
@@ -30,6 +30,8 @@
       </div>
     </div>
   </div>
+
+
   <!-- -------------about------------ -->
   <div id="about">
     <div class="container">
@@ -48,29 +50,29 @@
             to a wonderfully well-rounded life.</p>
 
           <div class="tab-titles">
-            <p class="tab-links active-link">Skills</p>
-            <p class="tab-links">Experience</p>
-            <p class="tab-links">Education</p>
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
           </div>
-          <div class="tab-contents">
+          <div class="tab-contents active-tab" id="skills">
             <ul>
               <li><span>Coding</span><br>Making websites</li>
               <li><span>Gaming</span><br>Having fun on video games</li>
               <li><span>Eating</span><br>Likes eating cookies, fries, chicken nuggets, and pretzels</li>
             </ul>
           </div>
-          <div class="tab-contents">
+          <div class="tab-contents" id="experience">
             <ul>
-              <li><span>Lorem</span><br>Lorem ipsum dolor sit amet consectetur</li>
-              <li><span>lorem</span><br>lorem ipsum dolor sit amet consectetur</li>
-              <li><span>lorem</span><br>lorem ipsum dolor sit amet consectetur</li>
+              <li><span>Obbies</span><br>I've done super hard obbies that take hours in games</li>
+              <li><span>Websites</span><br>I've made lots of websites that do different things</li>
+              <li><span>Restaurants</span><br>I eat lots of food at restaurants</li>
             </ul>
           </div>
-          <div class="tab-contents">
+          <div class="tab-contents" id="education">
             <ul>
-              <li><span>Lorem</span><br>Lorem ipsum dolor sit amet consectetur</li>
-              <li><span>lorem</span><br>lorem ipsum dolor sit amet consectetur</li>
-              <li><span>lorem</span><br>lorem ipsum dolor sit amet consectetur</li>
+              <li><span>Tutorials</span><br>I've went through lots of tutorials such as flexbox tutorials</li>
+              <li><span>Practice</span><br>I do things lots of times and get them right eventually</li>
+              <li><span>Loving sweets</span><br>I have a sweet tooth and learned that when I ate a cookie</li>
             </ul>
           </div>
         </div>
@@ -78,6 +80,25 @@
     </div>
   </div>
 
+  <!-- -----------posts----------
+  <div id="posts">
+    <div class="container">
+      <h1 class="sub-title">My Posts</h1>
+      <div class="post-list">
+
+      </div>
+    </div>
+  </div> -->
+
+  ' <!-------------portfolio------------>
+  <div id="projects">
+    <div class="container">
+      <h1 class="sub-title">My Projects</h1>
+      <div class="post-list">
+
+      </div>
+    </div>
+  </div>'
   <script src="script.js"></script>
 </body>
 
