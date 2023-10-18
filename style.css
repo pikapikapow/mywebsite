@@ -10,6 +10,11 @@ body {
   color: #fff;
 }
 
+.header-text h1 {
+  font-size: 60px;
+  margin-top: 20px;
+}
+
 #header {
   height: 100vh;
   background-image: url(img/better.JPG);
@@ -78,10 +83,7 @@ nav ul li a:hover::after {
   font-size: 30px;
 }
 
-.header-text h1 {
-  font-size: 60px;
-  margin-top: 20px;
-}
+
 
 .header-text h1 span {
   color: #ff004f;
@@ -272,4 +274,38 @@ nav ul li a:hover::after {
   text-align: center;
   font-size: 13px;
   margin-bottom: 15px;
+}
+
+@media screen and (max-width: 900px) {
+  .logo {
+    font-weight: 800;
+    font-size: 35px;
+  }
+
+  .header-text h1 {
+    font-size: 40px;
+    margin-top: 20px;
+  }
+
+  .header-text {
+    margin-top: 20%;
+    font-size: 20px;
+  }
+
+  ul a {
+    font-size: 10px;
+  }
+
+  .bird {
+    width: 400px;
+  }
+
+  #header {
+    padding-bottom: 20px;
+    margin-bottom: 0px;
+  }
+
+  #about {
+    margin-top: 0;
+  }
 }
