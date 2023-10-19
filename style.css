@@ -21,12 +21,13 @@ body {
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
-
 }
 
 .logo {
   font-weight: 800;
   font-size: 50px;
+  display: inline-block;
+  margin: 0;
 }
 
 .first_letter {
@@ -44,6 +45,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin-top: 20px;
 }
 
 .logo {
@@ -276,10 +278,44 @@ nav ul li a:hover::after {
   margin-bottom: 15px;
 }
 
-@media screen and (max-width: 900px) {
+/* mobile nav list */
+
+nav {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.hamburger-icon {
+  display: inline-block;
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.nav-list-mobile {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  margin-left: auto;
+  background-color: rgba(24, 20, 20, 0.945);
+  padding: 15px 10px;
+  margin-bottom: 30px;
+  top: 15px;
+  right: 5px;
+}
+
+.nav-list-mobile li {
+  margin: 7px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
   .logo {
     font-weight: 800;
     font-size: 35px;
+    width: 200px;
   }
 
   .header-text h1 {
@@ -292,8 +328,8 @@ nav ul li a:hover::after {
     font-size: 20px;
   }
 
-  ul a {
-    font-size: 10px;
+  .nav-list {
+    display: none;
   }
 
   .bird {
@@ -307,5 +343,14 @@ nav ul li a:hover::after {
 
   #about {
     margin-top: 0;
+  }
+
+  .sub-title {
+    font-size: 40px;
+  }
+
+  .work {
+    height: 200px;
+    width: 200px;
   }
 }
