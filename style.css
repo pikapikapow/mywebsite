@@ -43,13 +43,14 @@ body {
 nav {
   display: flex;
   align-items: center;
+  flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
   margin-top: 20px;
 }
 
 .logo {
-  width: 500px;
+  display: inline-block;
 }
 
 nav ul li {
@@ -283,19 +284,18 @@ nav ul li a:hover::after {
 nav {
   position: relative;
   display: flex;
-  flex-direction: column;
+  align-items: center;
 }
 
 .hamburger-icon {
   display: inline-block;
-  position: absolute;
-  top: 30px;
-  right: 20px;
+
   cursor: pointer;
+  font-size: 20px;
 }
 
 .nav-list-mobile {
-  display: flex;
+  display: none;
   position: absolute;
   flex-direction: column;
   margin-left: auto;
@@ -311,11 +311,14 @@ nav {
   cursor: pointer;
 }
 
-@media screen and (max-width: 600px) {
+.show-modal {
+  display: flex;
+}
+
+@media screen and (max-width: 1000px) {
   .logo {
     font-weight: 800;
     font-size: 35px;
-    width: 200px;
   }
 
   .header-text h1 {
@@ -352,5 +355,11 @@ nav {
   .work {
     height: 200px;
     width: 200px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .hamburger-icon {
+    display: none;
   }
 }
