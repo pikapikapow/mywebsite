@@ -342,6 +342,7 @@ nav {
   #header {
     padding-bottom: 20px;
     margin-bottom: 0px;
+    height: auto;
   }
 
   #about {
@@ -356,6 +357,19 @@ nav {
     height: 200px;
     width: 200px;
   }
+
+  .desc-text {
+    font-size: 15px;
+    margin-right: 50px;
+  }
+
+  i {
+    right: 20px;
+  }
+
+  .tab-contents {
+    font-size: 20px;
+  }
 }
 
 @media screen and (min-width: 1000px) {
@@ -363,3 +377,16 @@ nav {
     display: none;
   }
 }
+
+/* @media screen and (max-width: 500px) {
+  p {
+    font-size: 15px;
+    margin: 25px;
+    width: auto;
+  }
+
+   {
+    font: 20px, Poppins, sans-serif;
+  }
+
+} */
