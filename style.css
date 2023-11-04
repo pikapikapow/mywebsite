@@ -186,13 +186,14 @@ nav ul li a:hover::after {
   grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
   grid-gap: 40px;
   margin-top: 50px;
-  justify-content: center;
+  align-items: center;
 }
 
 .work {
   border-radius: 10px;
   position: relative;
   height: 360px;
+  margin: auto;
 }
 
 .work img {
