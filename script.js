@@ -9,8 +9,17 @@ function toggleNavbar() {
 
 }
 
+function closeModal() {
+  setTimeout(() => {
+    navbarModel.classList.contains("show-modal") &&
+      navbarModel.classList.remove("show-modal")
+  })
+}
+
 
 hamburgerIcon.addEventListener("click", toggleNavbar)
+
+navbarModel.addEventListener("click", closeModal)
 
 
 // about section tabs
