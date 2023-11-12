@@ -136,6 +136,12 @@ nav ul li a:hover::after {
   text-align: center;
 }
 
+#zhan-website {
+  font-weight: 700;
+  text-decoration: none;
+  color: white;
+}
+
 .tab-titles {
   display: flex;
   margin: 20px 0 40px;
