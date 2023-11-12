@@ -97,9 +97,9 @@ nav ul li a:hover::after {
 
 /* ------------------about-------------*/
 
-.bird {
+/* .bird {
   width: 500px;
-}
+} */
 
 #about {
   padding: 80px 0;
@@ -109,6 +109,7 @@ nav ul li a:hover::after {
 
 .row {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
 }
@@ -333,7 +334,7 @@ nav {
   display: flex;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 750px) {
 
   #about {
     padding: 0 30px;
@@ -369,8 +370,10 @@ nav {
   }
 
   .about-col-1 {
-    display: none;
+    margin-top: 40px;
   }
+
+
 
 
   #header {
@@ -426,7 +429,10 @@ nav {
   }
 
   img.bird {
-    width: 200px;
+    width: 350px;
+    height: 300px;
+    object-fit: cover;
+
   }
 
   #about {
